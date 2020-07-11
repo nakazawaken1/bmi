@@ -1,34 +1,24 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
-      <h1 class="title">
-        nuxt_study
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      <MyButton />
+      <MyButton back_color="#666666" />
+      <MyButton back_color="#330000" fore_color="#ffeeee" />
+      <MyButton left_arrow />
+      <MyButton right_arrow />
+      <MyButton left_arrow right_arrow />
+      <MyButton>実行</MyButton>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import MyButton from "@/components/MyButton.vue";
+export default {
+  components: {
+    MyButton
+  }
+};
 </script>
 
 <style>
